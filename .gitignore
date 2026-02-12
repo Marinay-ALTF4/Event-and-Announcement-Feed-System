@@ -1,0 +1,31 @@
+# Dependencies
+/vendor/
+node_modules/
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Environment files
+.env
+env
+
+# Framework writable outputs
+writable/cache/*
+writable/debugbar/*
+writable/logs/*
+writable/session/*
+writable/uploads/*
+
+# Allow placeholder files to remain tracked
+!writable/index.html
+!writable/uploads/index.html
+
+# Logs and temporary artifacts
+*.log
+*.tmp
+*.bak
+
+# Data formats not intended for version control
+*.xml
+*.json

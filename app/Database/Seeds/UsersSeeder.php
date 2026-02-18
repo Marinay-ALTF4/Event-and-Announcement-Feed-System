@@ -13,24 +13,27 @@ class UsersSeeder extends Seeder
 
         $data = [
             [
-                'name'          => 'Admin User',
-                'user_id'       => '2112020100',
+                'name'          => 'Admin',
+                'email'         => 'admin@example.com',
+                'user_id'       => '2000',
                 'role'          => 'admin',
                 'password_hash' => $password,
                 'created_at'    => $now,
                 'updated_at'    => $now,
             ],
             [
-                'name'          => 'Teacher One',
-                'user_id'       => '2112020101',
+                'name'          => 'Teacher',
+                'email'         => 'teacher@example.com',
+                'user_id'       => '2001',
                 'role'          => 'teacher',
                 'password_hash' => $password,
                 'created_at'    => $now,
                 'updated_at'    => $now,
             ],
             [
-                'name'          => 'Student One',
-                'user_id'       => '2112020102',
+                'name'          => 'Student',
+                'email'         => 'student@example.com',
+                'user_id'       => '2002',
                 'role'          => 'student',
                 'password_hash' => $password,
                 'created_at'    => $now,

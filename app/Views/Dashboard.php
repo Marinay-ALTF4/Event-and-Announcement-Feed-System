@@ -15,11 +15,11 @@ $isStudent = $role === 'student';
 </head>
 <body class="bg-light">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="container">
-			<a class="navbar-brand text-white fw-bold" href="#">EA Portal</a>
+		<div class="container d-flex align-items-center">
+			<span class="navbar-brand mb-0 h1 text-white">EA Portal</span>
 			<div class="ms-auto d-flex align-items-center gap-2">
 				<span class="badge text-bg-light text-uppercase">Role: <?= esc($role) ?></span>
-				<a class="btn btn-sm btn-primary" href="<?= base_url('logout') ?>">Logout</a>
+				<a class="btn btn-sm btn-dark" href="<?= base_url('logout') ?>">Logout</a>
 			</div>
 		</div>
 	</nav>
@@ -81,8 +81,7 @@ $isStudent = $role === 'student';
 							<h6 class="fw-semibold">Manage Users</h6>
 							<p class="text-muted small mb-3">Add, edit, or remove teacher and student accounts.</p>
 							<div class="d-flex gap-2">
-								<button class="btn btn-primary btn-sm">Add User</button>
-								<button class="btn btn-outline-secondary btn-sm">User List</button>
+								<a class="btn btn-outline-secondary btn-sm" href="<?= base_url('admin/users') ?>">User List</a>
 							</div>
 						</div>
 					</div>

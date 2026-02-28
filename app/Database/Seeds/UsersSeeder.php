@@ -9,7 +9,6 @@ class UsersSeeder extends Seeder
     public function run(): void
     {
         $now = date('Y-m-d H:i:s');
-        $password = password_hash('password123', PASSWORD_DEFAULT);
 
         $data = [
             [
@@ -17,7 +16,7 @@ class UsersSeeder extends Seeder
                 'email'         => 'admin@example.com',
                 'user_id'       => '2000',
                 'role'          => 'admin',
-                'password_hash' => $password,
+                'password_hash' => password_hash('admin123', PASSWORD_DEFAULT),
                 'created_at'    => $now,
                 'updated_at'    => $now,
             ],
@@ -26,7 +25,7 @@ class UsersSeeder extends Seeder
                 'email'         => 'teacher@example.com',
                 'user_id'       => '2001',
                 'role'          => 'teacher',
-                'password_hash' => $password,
+                'password_hash' => password_hash('teacher123', PASSWORD_DEFAULT),
                 'created_at'    => $now,
                 'updated_at'    => $now,
             ],
@@ -35,7 +34,7 @@ class UsersSeeder extends Seeder
                 'email'         => 'student@example.com',
                 'user_id'       => '2002',
                 'role'          => 'student',
-                'password_hash' => $password,
+                'password_hash' => password_hash('student123', PASSWORD_DEFAULT),
                 'created_at'    => $now,
                 'updated_at'    => $now,
             ],

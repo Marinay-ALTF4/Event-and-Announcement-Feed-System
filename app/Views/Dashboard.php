@@ -87,11 +87,12 @@ $isStudent = $role === 'student';
 					</div>
 					<div class="col-md-6">
 						<div class="border rounded p-3 h-100 bg-white">
-							<h6 class="fw-semibold">Manage Events &amp; Announcements</h6>
+							<h6 class="fw-semibold">Manage Events & Announcements</h6>
 							<p class="text-muted small mb-3">Create, edit, delete, and schedule items.</p>
 							<div class="d-flex gap-2">
-								<button class="btn btn-primary btn-sm">New Event</button>
-								<button class="btn btn-outline-secondary btn-sm">New Announcement</button>
+								<button class="btn btn-primary btn-sm">New Post</button>
+								<button class="btn btn-primary btn-sm">Manage Post</button>
+								
 							</div>
 						</div>
 					</div>

@@ -6,9 +6,7 @@ node_modules/
 .vscode/
 .idea/
 
-# Environment files
-.env
-env
+
 
 # Framework writable outputs
 writable/cache/*
